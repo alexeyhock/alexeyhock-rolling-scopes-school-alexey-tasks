@@ -67,12 +67,12 @@ function getStringFromTemplate(firstName, lastName) {
  *   'Hello, John Doe!' => 'John Doe'
  *   'Hello, Chuck Norris!' => 'Chuck Norris'
  */
-/*function extractNameFromTemplate(value) {
+function extractNameFromTemplate(value) {
     var helloname = value.replace(/Hello, /, '');
     var name = helloname.replace(/!/, '');
     return (name);
 }
-*/
+
 
 /**
  * Returns a first char of the given string.
