@@ -88,19 +88,20 @@ function getFirstChar(value) {
     return (value[0])
 }
 
-/**
- * Removes a leading and trailing whitespace characters from string.
- *
- * @param {string} value
- * @return {string}
- *
- * @example
- *   '  Abracadabra'    => 'Abracadabra'
- *   'cat'              => 'cat'
- *   '\tHello, World! ' => 'Hello, World!'
- */
+/** 
+* Removes a leading and trailing whitespace characters from string.  
+*
+* @param {string} value  
+* @return {string}  
+*  
+* @example  
+*   '  Abracadabra'=> 'Abracadabra'  
+*   'cat'  => 'cat'  
+*   '\tHello, World! ' => 'Hello, World!'
+*/
+
 function removeLeadingAndTrailingWhitespaces(value) {
-    return value.replace(/^\s+|\s+$/g, "");
+return value.replace(/^\s+|\s+$/g, "");
 }
 
 /**
@@ -115,10 +116,10 @@ function removeLeadingAndTrailingWhitespaces(value) {
  *   'cat', 3 => 'catcatcat'
  */
 function repeatString(value, count) {
-    throw new Error('Not implemented');
+   return (value.repeat(count));
 }
 
-/**
+    /**
  * Remove the first occurrence of string inside another string
  * 
  * @param {string} str
@@ -131,7 +132,7 @@ function repeatString(value, count) {
  *   'ABABAB','BA' => 'ABAB'
  */
 function removeFirstOccurrences(str, value) {
-    throw new Error('Not implemented');
+    return str.replace(value, '');
 }
 
 /**
@@ -146,7 +147,7 @@ function removeFirstOccurrences(str, value) {
  *   '<a>' => 'a'
  */
 function unbracketTag(str) {
-    throw new Error('Not implemented');
+    return str.replace(/^<|>$/g, '');
 }
 
 
@@ -161,7 +162,7 @@ function unbracketTag(str) {
  *  'abcdefghijklmnopqrstuvwxyz' => 'ABCDEFGHIJKLMNOPQRSTUVWXYZ'
  */
 function convertToUpperCase(str) {
-    throw new Error('Not implemented');
+    return str.toUpperCase();
 }
 
 /**
